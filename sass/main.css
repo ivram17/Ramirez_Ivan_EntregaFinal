@@ -1,0 +1,314 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*position: relative;*/
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+header {
+  width: auto;
+  height: 95px;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  justify-content: center;
+}
+header .headerLogo img {
+  width: 250px;
+  height: auto;
+  margin-top: 15px;
+  float: left;
+  margin-left: 50px;
+}
+header .menuNav {
+  -webkit-padding-before: 35px;
+          padding-block-start: 35px;
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul li {
+  display: inline;
+  text-decoration: none;
+  border-left: solid black;
+  border-right: solid darkgray;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+header nav ul li a:hover {
+  color: rgb(0, 0, 0);
+  border: solid white;
+  border-radius: 10px;
+  border-left: none;
+  border-right: none;
+  background-color: rgb(186, 96, 54);
+}
+
+.navMin h5 a {
+  color: white;
+  margin: 5px;
+  letter-spacing: 2px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+.navMin a:hover {
+  color: white;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  border: solid white;
+  border-radius: 5px;
+  border-left: none;
+  border-right: none;
+}
+
+@media (min-width: 1090px) {
+  .navMin {
+    display: none;
+  }
+}
+@media (max-width: 1090px) {
+  header .headerLogo {
+    display: grid;
+    place-items: center;
+    margin-left: 0;
+  }
+  header .menuNav {
+    display: none;
+  }
+}
+/*pages/main /serv y promos*/
+#intro {
+  text-align: center;
+  color: sienna;
+  margin: 10px;
+  padding: 10px;
+}
+#intro h1 {
+  letter-spacing: 0.3em;
+  font-size: 205%;
+  font-family: "Times New Roman", Times, serif;
+}
+#intro h1:hover {
+  color: rgba(128, 128, 128, 0.871);
+  background-color: rgba(53, 42, 42, 0.727);
+}
+#intro h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 150%;
+  letter-spacing: 0.1em;
+  margin-top: 0.5em;
+}
+
+section .secServ .serv h3:hover {
+  text-shadow: orange -2px 0, red -4px 0;
+  cursor: wait;
+}
+
+@media (min-width: 576px) {
+  #into {
+    text-align: center;
+    color: white;
+  }
+}
+@media (max-width: 600px) {
+  .contTel {
+    font-size: 10px;
+  }
+}
+/*page sevicios y promociones*/
+.secServ {
+  display: grid;
+  margin-top: 2em;
+  row-gap: 2em;
+  width: 100%;
+  height: auto;
+}
+.secServ .serv {
+  width: 100%;
+  height: auto;
+}
+.secServ .serv h2 {
+  color: sienna;
+  text-align: center;
+}
+.secServ .serv h3 {
+  color: white;
+  text-align: center;
+}
+.secServ .servImg img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: sienna;
+}
+.secServ .cardsGrid {
+  display: grid;
+  justify-content: space-around;
+}
+.secServ .cardsGrid .card {
+  width: 100%;
+  margin-top: 3rem;
+}
+.secServ .cardsGrid .card iframe {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.secServ .cardsGrid .card-body {
+  background-color: gray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.secServ .cardsGrid .card-body:hover {
+  color: orange;
+}
+
+@media (max-width: 750px) {
+  .secServ .cardsGrid .container .row .col {
+    display: grid;
+    place-items: center;
+  }
+}
+.accord {
+  margin-top: 2rem;
+  width: 100%;
+}
+.accord .accordion-item {
+  background-color: rgb(246, 194, 98);
+  color: black;
+  letter-spacing: 0.1rem;
+}
+.accord .accordion-item .accordion-button {
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.bottonSubir {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.bottonSubir A {
+  width: 15rem;
+}
+
+.contRedes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.contRedes .tabRedes {
+  display: inline;
+  justify-content: center;
+  margin-top: 1rem;
+  width: auto;
+  height: auto;
+  font-size: large;
+  text-align: center;
+}
+.contRedes .tabRedes a {
+  text-decoration: none;
+  color: orange;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/*contacto*/
+.contTel {
+  display: flex;
+  justify-content: space-around;
+}
+.contTel .contInt {
+  margin: 2rem;
+  text-align: center;
+}
+.contTel .contInt tbody {
+  font-size: larger;
+}
+
+/*proveedores*/
+.contProv {
+  margin-top: 1;
+  margin-bottom: 1;
+  display: flex;
+  justify-content: center;
+}
+.contProv .cuadro {
+  display: grid;
+  grid-template-rows: 5;
+  padding: 2em;
+  margin: 2em;
+  row-gap: 0;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+.contProv .cuadro .nombre {
+  height: auto;
+  font-size: 1rem;
+  padding: 1em;
+  background-color: rgb(160, 81, 50);
+  border-spacing: 0.5vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.contProv .cuadro .nombre #fname {
+  margin-top: 10px;
+}
+.contProv .cuadro .mail {
+  height: auto;
+  font-size: 1rem;
+  padding: 1em;
+  background-color: rgba(160, 81, 45, 0.922);
+  border-spacing: 0.5vw;
+}
+.contProv .cuadro .subArch {
+  height: auto;
+  padding: 1em;
+  font-size: 1rem;
+  background-color: rgba(160, 81, 45, 0.7);
+  border-spacing: 0.5vw;
+}
+.contProv .cuadro .nroCont {
+  height: auto;
+  padding: 1em;
+  font-size: 1rem;
+  background-color: rgba(160, 81, 45, 0.7);
+  border-spacing: 0.5vw;
+}
+.contProv .cuadro .option {
+  height: auto;
+  padding: 1em;
+  background-color: rgba(160, 81, 45, 0.55);
+}
+.contProv .cuadro .option p {
+  font-size: 1rem;
+}
+.contProv .cuadro .comenta {
+  height: auto;
+  padding: 1em;
+  font-size: 1rem;
+  border-spacing: 0.5vw;
+  background-color: rgba(160, 81, 45, 0.4);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.contProv .cuadro .comenta .btnEnv {
+  width: 10rem;
+}
+
+@media (max-width: 576px) {
+  .contProv .cuadro .subArch {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
